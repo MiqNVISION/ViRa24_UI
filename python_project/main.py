@@ -574,7 +574,7 @@ class MainWindow(QtWidgets.QMainWindow):
                             self.ana2_buffer[logging_slice],
                             self.distance_breath[logging_slice] + shift_breath,
                             self.distance_pulse[logging_slice] + shift_pulse,
-                            self.distance_heartsound[logging_slice] * 1e3 + shift_heartsound,
+                            self.distance_heartsound[logging_slice] * 1e3 + shift_heartsound * 1e3,
                             self.hs1[logging_slice] + shift_hs1,
                             self.hs2[logging_slice] + shift_hs2,
                             self.ecg[logging_slice],
